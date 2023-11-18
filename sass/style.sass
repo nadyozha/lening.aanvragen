@@ -1,0 +1,2057 @@
+$Dark: #253759
+$Blue: #3394EE
+
+img 
+	max-width: 100%
+	height: auto
+
+html 
+	width: 100%
+	height: 100%
+	font-family: 'Hind Vadodara', Sans-Serif
+
+body
+	height: 100%
+	overflow-x: hidden
+	background: #FBFBFB
+	font-family: 'Work Sans', sans-serif
+
+body.lock
+	overflow: hidden
+
+input::placeholder, textarea::placeholder
+	color: #606060
+	font-size: 14px
+	
+*
+	outline: none !important
+	&:focus
+		box-shadow: none !important
+
+
+a:hover
+	text-decoration: none
+
+h1, h2, h3, h4, h5, h6, p, span
+	color: #253759
+
+p
+	font-weight: 400
+	font-size: 14px
+	line-height: 24px
+	@media (max-width: 991.98px)
+		font-size: 12px
+		line-height: 20px
+
+h1
+	font-weight: 300
+	font-size: 44px
+	line-height: 50px
+	@media (max-width: 991.98px)
+		font-size: 28px
+		line-height: 32px
+
+h2
+	font-weight: 400
+	font-size: 36px
+	line-height: 42px
+	@media (max-width: 991.98px)
+		font-weight: 300
+		font-size: 28px
+		line-height: 32px
+
+
+h3
+	font-size: 36px
+	line-height: 42px
+	font-weight: 400
+	@media (max-width: 991.98px)
+		font-size: 26px
+		line-height: 30px
+
+h4
+	font-weight: 400
+	font-size: 24px
+	line-height: 30px
+	@media (max-width: 991.98px)
+		font-size: 22px
+		line-height: 30px
+
+h6
+	font-weight: 500
+	font-size: 16px
+	line-height: 26px
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1200px
+
+@media (min-width: 1200px)
+	.container-1000
+		max-width: 1000px
+
+@media (min-width: 1200px)
+	.container-470
+		max-width: 470px
+.row-1
+	margin-left: -.25rem
+	margin-right: -.25rem
+	> [class*="col"]
+		padding-left: .25rem
+		padding-right: .25rem
+
+//buttons
+
+button
+	transition: all 0.3s
+	font-size: 14px
+	line-height: 14px
+	box-sizing: border-box
+	border-radius: 35px !important
+	box-shadow: none !important
+	padding: 15px 25px
+	white-space: normal !important
+	&:hover
+		cursor: pointer
+
+.btn-nav
+	color: $Blue
+	border: 1px solid $Blue
+	background: transparent
+	&:hover
+		color: $Dark
+		border: 1px solid $Dark
+
+.btn-transp
+	color: #fff
+	border: 1px solid rgba(255, 255, 255, 0.2)
+	background: transparent
+	&:hover
+		opacity: 0.8
+	
+.btn-white
+	background: #fff
+	color: $Blue
+	border: 1px solid #fff
+	&:hover
+		color: $Dark
+		border: 1px solid $Blue
+	
+.btn-blue
+	color: #fff
+	border: none
+	background: $Blue
+	&:hover
+		opacity: 0.8
+
+.btn-transp-dark
+	color: $Dark
+	background: transparent
+	border: 1px solid rgba(15, 56, 94, 0.2)
+	font-size: 12px
+	padding: 15px 36px
+	&:hover
+		color: $Blue
+		border: 1px solid $Blue
+		a
+			color: $Blue
+	a
+		font-size: 12px
+		color: $Dark
+			
+
+.btn-arrow
+	justify-content: center
+	align-items: center
+	img
+		margin-left: 7px
+		width: 5px
+		height: 10px
+
+//navigation
+
+.fluid-menu
+	background-color: #fff
+	position: absolute
+	z-index: 100
+	@media (max-width: 991.98px)
+		position: fixed
+		top: 0
+	.menu-header
+		nav.navbar
+			padding-top: 15px
+			padding-bottom: 15px
+			.btn-nav
+			@media (max-width: 991.98px)
+				transition: .3s
+				.navbar-collapse
+					position: fixed
+					top: 0
+					left: 100%
+					right: 0
+					bottom: 0
+					z-index: 99
+					height: 100vh
+					background-color: #FBFBFB
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					transition: 0.3s
+					opacity: 0
+					max-width: 100%
+					&:before
+						content: ''
+						position: absolute
+						left: 0
+						top: 0
+						right: 0
+						height: 56px
+						background-color: #fff
+					.nav-btn-a
+						width: 100%
+						display: inline-block
+						margin-top: 57px
+						padding: 0 45px
+						button
+							width: 100%
+						@media (max-height: 400px)
+							margin-top: 5px
+				.nav-contente-active
+					display: flex
+					left: 0
+					opacity: 1
+					height: 100vh
+			ul.navbar-nav
+				margin-left: auto
+				margin-right: auto
+				justify-content: center
+				@media (max-width: 991.98px)
+					width: 100%
+					@media (max-height: 420px)
+						margin-top: 2rem
+					@media (max-height: 400px)
+				li.nav-item
+					line-height: 40px
+					padding-left: 45px
+					@media (max-width: 991.98px)
+						margin-top: 34px
+						@media (max-height: 420px)
+							padding: 0 0 0 45px
+							margin-top: 0
+					a.nav-link
+						font-size: 12px
+						line-height: 40px
+						color: #253759
+						border-bottom: 1px solid transparent
+						transition: 0.5s
+						@media (max-height: 420px)
+							font-size: 16px
+							line-height: 18px
+						&:hover
+							color: $Blue
+						@media (max-width: 991.98px)
+							font-weight: 300
+							font-size: 28px
+							line-height: 32px
+							&:hover
+								font-weight: 300
+								font-size: 30px
+
+					a.active
+						border-bottom: 1px solid silver
+						@media (max-width: 991.98px)
+							border: none
+
+			#sandwich
+				position: relative
+				width: 20px
+				height: 12px
+				cursor: pointer
+				transition: .3s
+				margin-left: 41px
+				z-index: 200!important
+				@media (min-width: 992px)
+					margin-top: 80px
+					margin-left: 0
+					margin-right: auto
+				&:before, span, &:after
+					content: ''
+					background-color: #253759
+					position: absolute
+					height: 2px
+					left: 0
+					right: 0
+					transition: .3s   
+					border-radius: 100px    
+				&:before
+					top: -2px
+					transform-origin: 25% center
+					.menubar-in &
+						transform: rotate(45deg)
+						top: 0
+				span
+					left: -5px
+					width: 20px
+				span
+					.menubar-in &
+						width: 0
+				&:after
+					bottom: -2px
+					transform-origin: 25% center
+					.menubar-in &
+						transform: rotate(-45deg)
+						bottom: -1px
+				&:hover 
+					opacity: .8
+
+//first-home
+
+.first-home
+	background: url('../img/Group335.png') no-repeat right bottom
+	background-size: 750px auto
+	padding-top: 290px
+	padding-bottom: 265px
+	@media (max-width: 1280px)
+		background-size: 700px auto
+		@media (max-width: 1199.98px)
+			background-size: 600px auto
+			@media (max-width: 991.98px)
+				background-size: 500px auto
+				padding-bottom: 275px
+				padding-top: 135px
+				@media (max-width: 767.98px)
+					background-size: 400px auto
+					padding-bottom: 340px
+
+//animate home collapse
+
+.second
+	.card-range-conteiner
+		position: relative
+		top: -150px
+		@media (max-width: 991.98px)
+			top: -75px
+
+	.bgs
+		padding-top: 134px
+		margin-top: -64px
+		top: -140px
+		&:before
+			top: 0
+			bottom: 140px
+		@media (max-width: 991.98px)
+			padding-top: 220px
+
+#collapseCart
+	position: relative
+	top: -100px
+	visibility: hidden
+	transition: 0.5s
+
+.collapse.show
+	top: 0!important
+	visibility: visible !important
+	transition: 0.5s
+
+//card-range
+
+.card-range
+	background-color: #fff
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
+	border-radius: 12px
+	position: relative
+	transition: 1s
+	display: flex
+	flex-direction: column
+	z-index: 6
+	&:after
+		content: ''
+		display: flex
+		width: 184px
+		height: 41px
+		position: absolute
+		top: 96%
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 5
+		opacity: 0
+		background: url('../img/bottom.svg') no-repeat center
+		background-size: cover
+		filter: drop-shadow(0 7px 5px rgba(0, 0, 0, .1))
+		transition: 1.3s
+
+	.carde-title
+		padding: 20px 100px
+		background: #3394EE
+		border-radius: 12px 12px 0 0
+		@media (max-width: 991.98px)
+			padding: 20px 20px
+		.button-chek
+			background: #fff
+			padding: 9px 20px	
+			border-radius: 38px
+			margin-right: 1rem
+			cursor: pointer
+			img
+				margin-left: 10px
+				width: 18px
+				height: 18px
+				cursor: pointer
+			@media (max-width: 991.98px)
+				width: 100%
+				margin-right: 10px
+				margin-left: 10px
+				margin-top: 6px
+
+	.carde-body
+		padding: 20px 100px
+		.btn-search
+			min-width: 160px
+			@media (max-width: 991.98px)
+				min-width: 100%
+		@media (max-width: 991.98px)
+			padding: 16px
+
+.card-renge-after
+	&:after
+		opacity: 1
+		top: 100%
+		
+//new-range
+
+.noUi-target
+	background: #E8ECEF
+	border: none
+	box-shadow: none
+.noUi-horizontal
+	height: 2px
+	.noUi-connect
+		height: 200%
+		margin-top: -1px
+	.noUi-tooltip-wrap
+		transform: translate(-50%, 0)
+		left: 50%
+		bottom: calc(100% + 14px)
+.noUi-connects
+	overflow: visible
+.noUi-connect
+	background: #3194EE
+	border-radius: 100px
+.noUi-handle
+	width: 18px !important
+	height: 18px !important
+	right: -9px !important
+	top: -9px !important
+	border: 4px solid #3194EE
+	border-radius: 100px
+	box-shadow: none
+	@media (max-width: 991.98px)
+		width: 28px !important
+		height: 28px !important
+		right: -14px !important
+		top: -14px !important
+
+	&:after, &:before
+		display: none
+
+.noUi-tooltip-wrap
+	display: flex
+	align-items: center
+	background: #DFEFFC
+	color: #3194EF
+	border-radius: 100px
+	position: absolute
+	padding: 4px 11px
+	@media (max-width: 991.98px)
+		display: none
+	.input-link
+		font-size: inherit
+		color: #3194EE
+
+.noUi-tooltip
+	border-radius: 100px
+	margin: 0 11px
+	border: 1px solid #99CCF8
+	padding: 1.5px 10px
+	position: static
+	font-size: 12px
+	color: inherit
+	background: transparent
+	transform: none !important
+	&:before 
+		content: ''
+		position: absolute
+		width: 10px
+		height: 10px
+		background: #DFEFFC
+		top: 100%
+		left: 50%
+		transform: translate(-50%, -50%) rotate(45deg)
+		z-index: -1
+
+.input-amount
+	min-width: 102px
+	text-align: center
+	border: 1px solid #ACD4F9
+	border-radius: 100px
+	padding: 8px 20px
+	color: #3194EE
+
+.input-link 
+	font-size: 26px
+	cursor: pointer
+	transition: .3s
+	color: #3194EE
+	&:hover
+		opacity: .8
+
+//checkbox-custom
+
+.checkbox
+	display: flex
+	align-items: center
+	margin: 0
+	cursor: pointer
+	input
+		display: none
+		&:checked
+			& ~ .custom-checkbox
+				border: 2px solid $Blue
+				opacity: 1
+				&:after
+					opacity: 1
+
+			& ~ .custom-text
+				opacity: 1
+
+.custom-checkbox
+	position: relative
+	margin-right: 10px
+	display: block
+	width: 24px
+	height: 24px
+	border-radius: 5px
+	border: 2px solid #253759
+	opacity: 0.2
+	transition: all linear .3s
+	&:after
+		content: ''
+		position: absolute
+		top: 2px
+		right: 2px
+		bottom: 2px
+		left: 2px
+		transition: all linear .3s
+		background: url('../img/Vector_8.svg') no-repeat center
+		opacity: 0
+
+.custom-text
+	font-size: 14px
+	line-height: 14px
+	opacity: 0.4
+	transition: all linear .3s
+
+//card-rente-wrap
+.card-rente-wrap
+	border-radius: 15px
+	.card-rente
+		background: #FFFFFF
+		box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+		border-radius: 15px
+		padding: 30px 30px 30px 40px
+		margin-bottom: 10px
+		position: relative
+		display: flex
+		flex-direction: column
+		transition: .5s
+		&:hover
+			cursor: pointer
+			.number-carts
+				border: 5px solid #c1d9fa
+				height: 50px
+				width: 50px
+				left: -25px
+				@media (max-width: 991.98px)
+					left: 18px
+					height: 40px
+					width: 40px
+
+		&:before
+			content: ''
+			display: block
+			width: 25px
+			height: 75px
+			position: absolute
+			top: 50%
+			left: -25px
+			transform: translateY(-50%)
+			background: url('../img/left.svg') no-repeat center
+			background-size: cover
+			
+			filter: drop-shadow(0px 15px 38px rgba(19, 44, 63, 0.07))
+			@media (max-width: 991.98px)
+				display: none
+
+		&:last-child
+			margin-bottom: 0
+		@media (max-width: 991.98px)
+			padding: 20px 15px
+
+		.number-carts
+			display: flex
+			width: 35px
+			height: 35px
+			position: absolute
+			top: 50%
+			left: -20px
+			transform: translateY(-50%)
+			font-weight: 500
+			font-size: 18px
+			line-height: 26px
+			align-items: center
+			justify-content: center
+			text-align: center
+			color: #FFFFFF
+			background: $Blue
+			border-radius: 100px
+			border: 5px solid transparent
+			transition: 0.5s
+			@media (max-width: 991.98px)
+				top: 15px
+				left: 20px
+				transform: translateY(0)
+		
+		.logo-stars
+			text-align: center
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			@media (max-width: 991.98px)
+				flex-direction: row
+				justify-content: space-between
+				.row-1
+					width: 100%
+			
+			.circul
+				display: flex
+				justify-content: center
+				align-items: center
+				text-align: center
+				width: 66px
+				height: 66px
+				border-radius: 33px
+				background: #f3f7fa
+				img.sant
+					@media (min-width: 992px)
+						max-width: 130%
+				@media (max-width: 991.98px)
+					width: 100%
+					height: 100%
+					background: none
+					justify-content: start
+					padding-left: 50px
+			.stars-wrap
+				display: flex
+				align-items: center
+				margin-top: 10px
+				@media (max-width: 991.98px)
+					margin-top: 0
+					margin-bottom: 1rem
+					justify-content: space-between
+				img
+					width: 14px
+					height: 14px
+		
+		.rente
+			h6
+				margin: 0
+				font-size: 24px
+				line-height: 26px
+				font-weight: normal
+				@media (max-width: 991.98px)
+					font-size: 16px
+
+			span
+				font-size: 12px
+				line-height: 14px
+				color: #9B9FA7
+				@media (max-width: 991.98px)
+					font-size: 10px
+					line-height: 12px
+					@media (max-width: 350px)
+						font-size: 8px
+
+			p
+				font-weight: 300
+				font-size: 12px
+				line-height: 14px
+				margin: 0
+				@media (max-width: 991.98px)
+					line-height: 12px
+					font-size: 10px
+
+			a
+				display: inline-block
+				margin-top: 17px
+				font-size: 14px
+				line-height: 14px
+				text-decoration-line: underline
+				color: #253759
+				margin: 0
+				font-weight: normal
+				@media (max-width: 350px)
+					font-size: 10px
+				
+
+		.button_a
+			text-align: center
+			display: flex
+			flex-direction: column
+			@media (max-width: 991.98px)
+				margin-top: 1rem
+
+			a
+				display: inline-block
+				margin-top: 17px
+				font-size: 14px
+				line-height: 14px
+				text-decoration-line: underline
+				color: #253759
+
+//top_rated
+
+.top_rated
+	padding-top: 270px
+	padding-bottom: 200px
+	position: relative
+	&:before 
+		@media (min-width: 460px)
+			clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%)
+			background-color: $Blue
+			background-image: url('../img/bg_top.svg')
+			background-size: cover
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			z-index: -1
+
+		@media (min-width: 992px)
+			clip-path: polygon(0 35%, 100% 0, 100% 65%, 0% 100%)
+
+	@media (max-width: 991.98px)
+		padding-top: 150px
+		padding-bottom: 150px
+
+	@media (max-width: 459.98px)
+		padding-top: 127px
+		padding-bottom: 0
+		&:before 
+			content: ''
+			position: absolute
+			display: block
+			width: 100%
+			height: 636px
+			top: 0
+			left: 0
+			z-index: -1
+			background: url('../img/33.svg') center center no-repeat
+			background-size: cover
+		
+	h3
+		color: #fff
+		margin-bottom: 50px
+
+.cart-logo
+	background-color: #fff
+	box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+	border-radius: 5px
+	padding: 80px 50px
+	height: 100%
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	max-height: 200px
+	transition: 0.3s
+	margin-bottom: 10px
+	@media (max-width: 991.98px)
+		max-height: 152px
+		padding: 75px 50px
+		img
+			max-width: 90%
+	@media (max-width: 767.98px)
+		margin-left: 30px
+		margin-right: 30px
+	@media (max-width: 575.98px)
+		img
+			max-width: 100%
+	&:hover
+		.cart-logo-hover
+			visibility: visible
+			opacity: 1
+
+	.cart-logo-hover
+		border-radius: 5px
+		visibility: hidden
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		background-color: $Blue
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		transition: .4s
+		opacity: 0
+		button
+			width: 80%
+			@media (max-width: 767.98px)
+				width: 90%
+				padding: 15px
+				@media (max-width: 350px)
+					font-size: 10px
+
+		a
+			color: #fff
+			border: none
+			font-size: 14px
+			line-height: 14px
+			text-decoration-line: underline
+			display: inline-block
+			padding-top: 10px
+			cursor: pointer
+			transition: 0.5s
+			&:hover
+				color: #fff
+				text-decoration-line: none
+			@media (max-width: 350px)
+					font-size: 10px
+
+//news_blog
+
+.news_blog
+	.news_blog_btn
+		@media (max-width: 991.98px)
+			margin-top: 12px
+
+	hr.time-line
+		opacity: 0.1
+		border-top: 1px solid #253759
+		position: relative
+		bottom: -95px
+
+	.owl-news
+		.owl-item
+			.active
+				padding-top: 95px!important
+
+.card-news
+	border-radius: 10px
+	padding: 10px
+	position: relative
+	height: 377px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	-webkit-transition: .5s
+	-moz-transition: .5s
+	-ms-transition: .5s
+	transition: .5s
+	box-sizing: border-box
+	max-width: 316px
+	z-index: 1
+	@media (max-width: 575.98px)
+		max-width: 290px
+	&:hover
+		-webkit-transition: .5s
+		-moz-transition: .5s
+		-ms-transition: .5s
+		transition: .5s
+		.img-wrap img
+			-webkit-transform: scale(1.2)
+			-moz-transform: scale(1.2)
+			-ms-transform: scale(1.2)
+			transform: scale(1.2)
+			-webkit-transition: .5s
+			-moz-transition: .5s
+			-ms-transition: .5s
+			transition: .5s
+
+		.cart-footer
+			bottom: 45px
+
+	.circul-time
+		position: absolute
+		left: 50%
+		top: -67px
+		width: 22px
+		height: 22px
+		border-radius: 11px
+		border: 4px solid #253759
+		box-sizing: border-box
+		background: #fff
+		transform: translateX(-50%)
+	h6.under-circul
+		position: absolute
+		top: -100px
+		left: 0
+		font-size: 18px
+		line-height: 18px
+		opacity: 0.5
+		font-weight: 300
+		text-align: center
+		width: 100%
+
+	.img-wrap
+		position: absolute
+		overflow: hidden
+		border-radius: 15px
+		top: 0
+		right: 0
+		bottom: 40px
+		left: 0
+		z-index: 2
+		img
+			position: relative
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			min-width: 100%
+			-webkit-transition: .5s
+			-moz-transition: .5s
+			-ms-transition: .5s
+			transition: .5s
+			border-radius: 15px
+			z-index: 3
+
+	.cart-footer
+		padding: 20px
+		background: #fff
+		position: relative
+		transition: 0.4s
+		bottom: 15px
+		z-index: 3
+		box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+		border-radius: 5px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		min-height: 142px
+		span
+			font-size: 12px
+			line-height: 12px
+			opacity: 0.5
+		h6
+			font-weight: normal
+			font-size: 18px
+			line-height: 22px
+			margin-top: 8px
+		small
+			font-size: 12px
+			line-height: 14px
+			opacity: 0.7
+			padding: 3px 12px
+			background: rgba(37, 55, 89, 0.06)
+			border-radius: 39px
+			margin-right: 4px
+
+	.news
+		line-height: 12px
+		color: #fff
+		display: inline-block
+		padding: 7px 12px
+		background: rgba(19, 44, 63, 0.4)
+		box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+		border-radius: 5px
+		position: absolute
+		top: 10px
+		left: 10px
+		z-index: 3
+
+
+//personal_loans
+
+.personal_loans
+	margin-top: 6rem
+	h3
+		font-weight: normal
+	h6
+		font-weight: normal
+		font-size: 18px
+		line-height: 22px
+		margin-top: 60px
+
+//loan_providers
+
+.loan_providers
+	h3
+		font-weight: 400
+		@media (max-width: 991.98px)
+			margin-bottom: 1rem
+	.wrap-cart-logo
+		padding-top: 2rem
+		padding-bottom: 2rem
+		margin-top: -2rem
+		padding-left: 0
+		padding-right: 0
+		&:first-child
+			padding-left: 15px
+
+		.cart-logo
+			margin-left: 0
+			margin-right: 0
+			@media (max-width: 767.98px)
+				padding: 70px 15px
+				@media (max-width: 767.98px)
+					padding: 55px 15px
+					min-width: 167px
+
+//home_bottom
+
+.home_bottom
+	padding-top: 360px
+	padding-bottom: 200px
+	background: url('../img/bg_home_bottom.svg') no-repeat center top
+	background-size: cover
+	@media (max-width: 767.98px)
+		padding-top: 120px
+		padding-bottom: 70px
+
+	h2
+		font-weight: normal
+		font-size: 36px
+		color: #FBFBFB
+		@media (max-width: 991.98px)
+			font-size: 26px
+			line-height: 30px
+			text-decoration-line: none
+
+.input_wrap
+	position: relative
+	input
+		height: 52px
+		background-color: transparent
+		border-radius: 26px
+		border: 1px solid #93c2ed
+		font-size: 14px
+		color: #FBFBFB
+		padding: 12px 26px
+		width: 90%
+		margin-top: 1rem
+		transition: .3s
+		position: relative
+		&:focus
+			border: 1px solid #fff
+
+		@media (max-width: 1199.98px)
+			width: 43%
+			@media (max-width: 991.98px)
+				width: 100%
+
+	input::placeholder
+		font-size: 14px
+		color: #FBFBFB
+		opacity: 0.8
+		@media (max-width: 991.98px)
+			text-decoration-line: none
+	button
+		font-weight: 300
+		color: #253759
+		padding: 10px 24px
+		position: absolute
+		top: 24px
+		right: 32px
+		box-shadow: -125px -5px 87px -19px rgba(123,149,199,1)
+		@media (max-width: 1199.98px)
+			right: 275px
+			@media (max-width: 991.98px)
+				right: 10px
+
+//footer
+
+footer
+	background-color: #3394EE
+	border-top: 2px solid #FFFFFF
+	padding-top: 12px
+	.row
+		@media (max-width: 767.98px)
+			padding: 0 16px
+	.row-footer
+		justify-content: space-between
+		@media (max-width: 991.98px)
+			flex-direction: column
+			justify-content: start
+			align-items: start
+
+	a, span
+		font-size: 12px
+		line-height: 12px
+		color: #fff
+		@media (max-width: 575.98px)
+			line-height: 38px
+			font-size: 10px
+
+	.footer-mail
+		font-size: 14px
+		font-weight: 500
+		@media (max-width: 991.98px)
+			font-size: 12px
+
+	.privacy
+		text-decoration-line: underline
+		&:hover
+			font-weight: 500
+			color: #fff
+			text-decoration-line: none
+	.nav
+		li
+			a
+				padding-right: 26px
+				&:hover
+					font-weight: 500
+					color: #fff
+				@media (max-width: 575px)
+					margin-right: 10px
+					padding-right: 19px
+					@media (max-width: 375px)
+						margin-top: 0
+						padding-right: 10px
+
+	hr
+		border-top: 1px solid #fff
+		background-color: #fff
+		opacity: 0.1
+
+//menu_transp
+.menu_transp
+	.fluid-menu
+		background-color: transparent
+		@media (max-width: 991.98px)
+			background-color: #1a77d1
+		.menu-header
+			nav.navbar
+				.btn-nav
+					color: #fff
+					border: 1px solid #fff
+					@media (max-width: 991.98px)
+						color: $Dark
+						border: 1px solid $Dark
+				.nav-contente
+					.navbar-nav
+						.nav-item
+							.nav-link
+								color: #fff
+								&:hover
+									color: silver
+								@media (max-width: 991.98px)
+									color: $Dark
+							a.active
+								border-bottom: 1px solid $Blue
+								@media (max-width: 991.98px)
+									border: none
+
+				@media (max-width: 991.98px)
+					.navbar-collapse
+						background-color: #FBFBFB
+				ul.navbar-nav
+					.nav-item
+						a.nav-link
+							color: #253759
+
+				#sandwich
+					&:before, span, &:after
+						background-color: #fff
+
+				.sandwich-dark
+					&:before, span, &:after
+						background-color: $Dark !important
+
+//loan_providers
+
+.loan_providers
+	.loan_first
+		background: url('../img/bg_top_2.svg') no-repeat center bottom
+		background-size: cover
+		padding-top: 225px
+		@media (max-width: 991.98px)
+			padding-bottom: 50px
+
+		h1
+			color: #fff
+
+.all_providers
+	margin-top: 4rem
+	@media (max-width: 991.98px)
+		margin-top: 0
+	h2
+		@media (max-width: 575.98px)
+			padding-left: 8px
+
+	.cart-logo
+		margin-left: 0
+		margin-right: 0
+		@media (max-width: 575.98px)
+			padding: 75px 20px
+
+@media (max-width: 575.98px)
+	.row-all-provider
+		margin-left: -.25rem
+		margin-right: -.25rem
+		> [class*="col"]
+			padding-left: 8px
+			padding-right: 8px
+
+//loan_provider_page
+
+.loan_provider_page
+	.santader
+		.noUi-connect
+			background: #fff
+
+		.noUi-handle
+			border: 4px solid #fff
+			background: #1679d9
+
+		.noUi-target
+			background: rgba(56, 148, 230, 0.5)
+			padding: 0
+
+		.noUi-tooltip-wrap
+			background: rgba(56, 148, 230, 0.5)
+			color: #fff
+
+		.noUi-tooltip:before
+			background: rgba(56, 148, 230, 0.5)
+
+		.input-amount
+			color: #fff
+
+		.input-link
+			color: #fff
+
+		.label-range
+			font-weight: 500
+			font-size: 16px
+			line-height: 26px
+			color: #FFF
+
+	.santader
+		padding-top: 166px
+		&:before
+			content: ''
+			background: url('../img/loan_top_page.svg') center bottom no-repeat
+			background-size: cover
+			position: absolute
+			top: 0
+			left: 0
+			height: 756px
+			width: 100%
+			z-index: -1
+			@media (max-width: 991.98px)
+				height: 870px
+				@media (max-width: 575.98px)
+					height: 830px
+		@media (max-width: 991.98px)
+			padding-top: 70px
+
+		.cart-santander
+			background-color: #fff
+			background: #FFFFFF
+			box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+			border-radius: 15px
+			padding: 20px
+			height: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+			.logo-cart
+				flex-grow: 1
+			@media (max-width: 991.98px)
+				min-height: 160px
+
+		h1
+			color: #fff
+
+		.right-block
+			@media (max-width: 991.98px)
+				margin-top: 2rem
+			.stars-wrap
+				img
+					&:last-child
+						opacity: 0.3
+				@media (max-width: 991.98px)
+					text-align: right
+
+			.dutation-name
+				color: #fff
+				position: relative
+				bottom: 15px
+
+			.rente-wrap
+				box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+				border-radius: 15px
+				padding: 20px 30px
+				background: rgba(56, 148, 230, 0.5)
+				height: 100%
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				@media (max-width: 991.98px)
+					padding: 13px 22px
+					@media (max-width: 767.98px)
+						padding: 13px 15px
+
+				span
+					font-size: 12px
+					line-height: 14px
+					color: #F5F5F5
+					opacity: 0.4
+					@media (max-width: 991.98px)
+						font-size: 10px
+						line-height: 10px
+				h6
+					font-weight: normal
+					font-size: 24px
+					line-height: 26px
+					color: #F5F5F5
+					@media (max-width: 991.98px)
+						font-size: 16px
+						line-height: 26px
+						@media (max-width: 350px)
+							font-size: 12px
+
+	.card-chek
+		padding: 50px 100px
+		margin-top: 50px
+		background-color: #fff
+		box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+		border-radius: 15px
+		@media (max-width: 767.98px)
+			padding: 20px 20px
+			margin-top: 105px
+			@media (max-width: 575.98px)
+				padding: 0
+				box-shadow: none
+				background-color: transparent
+		img
+			height: 28px
+			width: 28px
+
+		p
+			padding-left: 1rem
+			font-size: 12px
+			line-height: 18px
+			opacity: 0.7
+			margin-bottom: 0
+
+	.excepteur
+		margin-top: 14px
+		@media (max-width: 991.98px)
+			margin-top: 50px
+		h4
+			margin-bottom: 24px
+		p
+			padding-left: 0
+			font-size: 14px
+			line-height: 24px
+			@media (max-width: 991.98px)
+				font-size: 12px
+
+		ul
+			margin-top: 2rem
+			li
+				list-style-type: none
+				font-size: 14px
+				line-height: 24px
+				color: #0F385E
+				opacity: 0.7
+				position: relative
+				margin-bottom: 12px
+				@media (max-width: 991.98px)
+					font-size: 12px
+					line-height: 24px
+				&:before
+					content: ''
+					display: block
+					background: url('../img/bullet.svg') no-repeat center center
+					background-size: cover
+					height: 28px
+					width: 28px
+					position: absolute
+					left: -40px
+					top: -1px
+					z-index: 3
+					@media (max-width: 991.98px)
+						height: 20px
+						width: 20px
+						top: 2px
+
+		.card-zcitat
+			padding: 24px 10px 24px 0
+			background: linear-gradient(140.58deg, #FFFFFF 0.28%, rgba(255, 255, 255, 0) 104.48%), rgba(51, 148, 238, 0.17)
+			border-radius: 15px
+			display: flex
+			margin: 1.5rem 0
+			img
+				width: 52px
+				height: 52px
+				margin-right: 1rem
+				@media (max-width: 991.98px)
+					height: 34px
+					width: 34px
+
+//carousel-logo
+
+.carousel-logo
+	padding: 120px 0 70px 0
+	position: relative
+	@media (max-width: 991.98px)
+		padding: 65px 0 50px 0
+	&:before
+		content: ''
+		background: url('../img/page_bottom.svg') center top no-repeat
+		background-size: cover
+		position: absolute
+		bottom: 0
+		left: 0
+		height: 554px
+		width: 100%
+		z-index: -1
+		@media (max-width: 1199.98px)
+			height: 500px
+			@media (max-width: 574.98px)
+				height: 250px
+
+//news_blog
+
+.news_blog
+	.news_first
+		padding-top: 235px
+		@media (max-width: 991.98px)
+			padding-top: 125px
+
+		h1
+			color: $Dark
+		.input_wrap
+			position: relative
+			&:after
+				content: ''
+				display: block
+				width: 90px
+				height: 35px
+				position: absolute
+				top: 24px
+				right: 123px
+				z-index: 2
+				background: linear-gradient(90deg, rgba(251,251,251,0) 0%, rgba(251,251,251,1) 100%)
+			
+			input
+				background-color: transparent
+				border: 1px solid silver
+				color: $Dark
+				width: 100%
+
+			input::placeholder
+				color: $Dark
+				text-decoration-line: none
+				position: relative
+				z-index: 0
+			button
+				color: #fff
+				text-decoration-line: none
+				padding: 12px 30px
+				top: 23px
+				right: 8px
+				z-index: 6
+				img
+					height: 12px
+					width: 12px
+					margin-right: 7px
+
+		.blog-cards
+			margin-top: 5rem
+			.card-news
+				min-width: 316px
+				@media (max-width: 1199.98px)
+					min-width: 300px
+					max-width: 300px
+					@media (max-width: 575.98px)
+						min-width: 343px
+						max-width: 343px
+						@media (max-width: 340px)
+							min-width: 300px
+
+//search_results
+
+.search_results
+	margin-top: 2rem
+	@media (max-width: 991.98px)
+		margin-top: 1.5rem
+
+	h2
+		margin-bottom: 0
+		margin-right: 1rem
+	span
+		font-size: 36px
+		opacity: 0.3
+		@media (max-width: 991.98px)
+			font-size: 26px
+
+	img
+		width: 32px
+		height: 32px
+		margin-left: 12px
+
+//news_search
+
+.news_search
+	.news_first
+		.blog-cards
+			margin-top: 2rem
+	span.clear
+		position: absolute
+		left: -50px
+		font-size: 14px
+		text-decoration-line: underline
+		opacity: 0.7
+		z-index: 5
+		@media (max-width: 991.98px)
+			display: none
+
+//Article
+
+.article
+	.fluid-menu
+		background: transparent
+		.menu-header
+			nav.navbar
+				ul.navbar-nav
+					li.nav-item
+						a.nav-link.active
+							border-bottom: 1px solid silver
+							@media (max-width: 991.98px)
+								border: none
+			
+	.article-first
+		padding-top: 420px
+		padding-bottom: 80px
+		&:before
+			content: ''
+			background: url('../img/article_bg.svg') center bottom no-repeat
+			background-size: cover
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			z-index: -1
+			@media (max-width: 1199.98px)
+				height: 757px
+				width: 100%
+				@media (max-width: 767.98px)
+					height: 455px
+					width: 100%
+					@media (max-width: 575.98px)
+						background: url('../img/Group208.svg') center bottom no-repeat
+						background-size: cover
+
+		@media (max-width: 767.98px)
+			padding-top: 485px
+		@media (max-width: 575.98px)
+			padding-bottom: 0
+
+		.cart-article
+			background: #FFF
+			box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+			border-radius: 15px
+			padding: 50px 100px
+			@media (max-width: 767.98px)
+				padding: 0
+				box-shadow: none
+				border-radius: none
+				background: transparent
+
+			.article-title
+				span
+					font-size: 12px
+					line-height: 12px
+					opacity: 0.5
+					padding-right: 12px
+				a
+					font-size: 14px
+					line-height: 12px
+					color: #3394EE
+
+			h2
+				margin-top: 10px
+
+			.span-row
+				display: flex
+				flex-wrap: wrap
+				margin-top: 14px
+				margin-bottom: 20px
+				span
+					font-weight: 300
+					font-size: 12px
+					line-height: 14px
+					opacity: 0.7
+					padding: 3px 12px
+					background: rgba(37, 55, 89, 0.06)
+					border-radius: 39px
+					margin-right: 4px
+
+			p
+				margin-top: 20px
+
+			img
+				margin-top: 32px
+				margin-bottom: 40px
+
+			h3
+				font-weight: normal
+				font-size: 24px
+				line-height: 30px
+
+//news-blog-slider
+
+.news-blog-slider
+	.news-wrap
+		padding-top: 16px
+		padding-bottom: 20px
+		.card-news
+			min-width: 316px
+			max-width: 316px
+			@media (max-width: 575.98px)
+				min-width: 290px
+				max-width: 290px
+
+	.form-row.owl-carousel
+		//margin-left: 0
+		margin-right: 0
+
+	.owl-main .owl-stage 
+		padding-left: 25px !important
+		@media (max-width: 575.98px)
+			padding-left: 10px !important
+
+	@media (min-width: 1200px)
+		.owl-main > .news-wrap
+			&:first-child
+				padding-left: 0
+
+	@media (max-width: 1200px)
+		.owl-stage > .owl-item:first-child > .news-wrap
+			padding-left: 0
+	
+	@media (max-width: 1199.98px)
+		.container-news-0
+			max-width: 100%
+			padding-left: 0
+			padding-right: 0
+
+//FAQ
+
+.faq
+	.faq_first
+		padding-top: 224px
+		@media (max-width: 991.98px)
+			padding-top: 260px
+		h1
+			margin-bottom: 0
+			@media (max-width: 991.98px)
+				margin-bottom: 1rem	
+		
+		.input_wrap
+			position: relative
+			&:after
+				content: ''
+				display: block
+				width: 90px
+				height: 35px
+				position: absolute
+				top: 10px
+				right: 123px
+				z-index: 2
+				background: linear-gradient(90deg, rgba(30,122,212,0) 0%, rgba(30,122,212,1) 100%)
+
+			input
+				background-color: transparent
+				border: 1px solid #93c2ed
+				color: #fff
+				width: 100%
+				overflow: hidden
+				margin-top: 0
+				transition: .3s
+				&:focus
+					border: 1px solid #fff
+			input::placeholder
+				color: #fff
+				text-decoration-line: none
+
+			button
+				color: $Dark
+				text-decoration-line: none
+				padding: 12px 30px
+				top: 7px
+				right: 8px
+				background: #fff
+				z-index: 3
+				img
+					height: 12px
+					width: 12px
+					margin-right: 7px
+
+		.cart-faq-block
+			background: #FFF
+			box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+			border-radius: 15px
+			padding: 0 80px 16px 80px
+			margin-top: 6rem
+			margin-bottom: 7rem
+			@media (max-width: 991.98px)
+				padding: 0 18px 16px 18px
+				margin-top: 2rem
+				margin-bottom: 1rem
+			.accordion
+				background-color: transparent
+
+				.card
+					border: none
+					cursor: pointer
+
+					.card-header
+						background: #FFFFFF
+						transition: 0.3s
+						padding: 34px 0
+						border: none
+						border-bottom: 2px solid silver
+						@media (max-width: 991.98px)
+							padding: 30px 0
+						span
+							display: block
+							width: 32px
+							height: 32px
+							border: 1px solid #d6eafc
+							border-radius: 50%
+							text-align: center
+							background-color: white
+							transition: 0.3s
+							padding: 2px
+							transition: 0.3s
+
+							img
+								opacity: 0.8
+								width: 12px
+								height: 9px
+								transform: rotate(0deg)
+								transition: 0.3s
+
+					[aria-expanded=true]
+						border-bottom: 2px solid transparent
+
+						h5
+							opacity: 1
+
+						span
+							border: 1px solid $Blue
+							img
+								transform: rotate(180deg)
+
+					h5
+						font-weight: normal
+						font-size: 18px
+						line-height: 29px
+						opacity: 0.7
+						margin-bottom: 0
+						@media (max-width: 991.98px)
+							font-size: 12px
+							line-height: 32px
+
+					.card-body
+						background: rgba(51, 148, 238, 0.05)
+						border-radius: 15px
+						border: none
+						@media (max-width: 991.98px)
+							padding: 10px
+						p
+							font-size: 14px
+							line-height: 24px
+							opacity: 0.7
+							margin-bottom: 0
+							@media (max-width: 991.98px)
+								font-size: 12px
+								line-height: 20px
+
+				.card-border-none
+					border-bottom: none
+
+			.accordion > :last-child
+				.card-header
+					border-bottom: none
+
+//faq-search	
+
+.faq-search
+	.search_results
+		h2
+			color: #fff
+		span
+			color: #fff
+
+	.faq_first
+		.cart-faq-block
+			margin-top: 3rem
+
+//privacy
+
+.privacy
+	.santader
+		&:before
+			@media (max-width: 991.98px)
+				background: none
+		@media (max-width: 991.98px)
+			padding-top: 155px
+
+		.cart-privacy
+			background: #FFF
+			box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+			border-radius: 15px
+			padding: 70px 100px
+			margin-bottom: 130px
+			@media (max-width: 991.98px)
+				background: transparent
+				box-shadow: none
+				padding: 0
+
+			h1
+				color: $Dark
+				margin-bottom: 26px
+
+			h4
+				margin-bottom: 20px
+
+	@media (max-width: 991.98px)			
+		.fluid-menu
+			background-color: transparent
+			.menu-header
+				nav.navbar
+					#sandwich
+						&:before, span, &:after
+							background-color: #253759
+
+//modal
+
+.modal
+	background: rgba(37, 55, 89, 0.8)!important
+	@media (max-width: 991.98px)	
+		background: #fff!important
+	.modal-lg
+		@media (min-width: 992px)
+			max-width: 970px
+			position: relative
+			
+
+		.modal-content
+			margin-left: auto
+			margin-right: auto
+			width: 100%
+			background: transparent
+			border: none
+			position: static
+
+			.cart-header
+				position: relative
+				@media (max-width: 991.98px)
+					position: static
+					
+				span
+					font-weight: 300
+					font-size: 44px
+					line-height: 50px
+					color: #FFF
+					position: relative
+					top: -45px
+					@media (max-width: 991.98px)
+						color: $Dark
+						font-size: 28px
+						line-height: 32px
+						top: -20px
+
+				a
+					position: absolute
+					right: 0
+					top: -45px
+					@media (max-width: 991.98px)
+						top: 20px
+						z-index: 1000
+						@media (max-height: 420px)
+							top: -15px
+						@media (max-width: 575.98px)
+							right: 20px
+
+			.cart-body
+				.card-range
+					&:after
+						display: none
+
+//preloader
+
+.preloader
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background: url('../img/preloader.png') no-repeat right bottom
+	background-size: auto 1000px
+	background-color: #fff
+	z-index: 1500
+	opacity: 1
+	visibility: visible
+	@media (max-height: 1050px)
+			background-size: auto 800px
+	@media (max-width: 1199.98px)
+		background-size: auto 900px
+		@media (max-height: 1050px)
+			background-size: auto 800px
+		@media (max-height: 790px)
+			background-size: auto 600px
+	@media (max-width: 991.98px)
+		background-size: auto 700px
+		@media (max-height: 400px)
+			background-size: auto 320px
+	@media (max-width: 767.98px)
+		@media (max-height: 430px)
+			background-size: auto 320px
+	@media (max-width: 575.98px)
+		background-size: auto 410px
+		@media (max-height: 340px)
+			background-size: auto 250px
+	@media (max-width: 360px)
+		background-size: auto 300px
+				
+	&.done
+		opacity: 0
+		visibility: hidden
+
+	.contente-preload
+		margin-top: 8rem
+		@media (max-width: 991.98px)
+			@media (max-height: 400px)
+				margin-top: 3rem
+			@media (max-width: 575.98px)
+				margin-top: 3rem
+		.logo-big
+			max-height: 190px
+
+		h2
+			font-size: 42px
+			line-height: 49px
+			margin-top: 28px
+			@media (max-width: 575.98px)
+				font-size: 36px
+
+//popover
+
+.popover
+	text-align: left
+	border: 1px solid $Blue
+	padding: 24px 15px
+	margin-top: 1.5rem
+	max-width: 340px
+	box-shadow: 0px 15px 38px rgba(19, 44, 63, 0.07), 0px 1px 1px rgba(0, 0, 0, 0.11)
+	border-radius: 15px
+	position: relative
+
+	.popover-body
+		font-weight: 300
+		font-size: 12px
+		line-height: 21px
+		color: #253759
+
+.img-crosss
+	position: absolute
+	top: 20px
+	right: 20px
+	cursor: pointer
+
+
+
+
+
+
+
+
+
+.wrap-h3-button
+	display: flex
+	align-items: center
+	@media (max-width: 991.98px)
+		flex-direction: column
+		align-items: start
+
+@media (min-width: 1440px)
+	.w-400px
+		flex-basis: 430px
+		min-width: 430px
+
+@media (max-width: 1199.98px)
+	.container-0-sm
+		padding-left: 0
+		padding-right: 0
+
+@media (min-width: 1200px)
+	.col-xl-370 
+		flex-basis: 370px
+		max-width: 370px
+
+	.col-xl-470
+		flex-basis: 470px
+		max-width: 470px
+
+.container-0
+	max-width: 100%
+	padding-left: 0
+	padding-right: 0
+
+@media (max-width: 340px)
+	.fz-l-10
+		font-size: 14px
+
+.star-opacity
+	opacity: 0.2
+
+@media (min-width: 1440px)
+	.ml-cart
+		margin-left: 73px
+
+
+.mt-20px
+	margin-top: 20px
+
+.home-contente
+	h3
+		margin-bottom: 18px
+.bgs
+	position: relative
+	padding-top: 134px
+	margin-top: -64px
+	&:before 
+		content: ''
+		border-radius: 15px
+		position: absolute
+		top: 0
+		bottom: 75px
+		left: 0
+		right: 0
+		background-color: rgba(51, 148, 238, .04)
+	@media (max-width: 991.98px)
+		margin-top: -120px
